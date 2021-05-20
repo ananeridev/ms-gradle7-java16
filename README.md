@@ -13,4 +13,4 @@ An it's important set Java 16 on the menu Preferences > Build, Excecution, Deplo
 
 ## Advice
 
-Prefer to use [sdkman](https://sdkman.io/) to manage the JDK and for Automation Compilators
+Prefer to use [sdkman](https://sdkman.io/) to manage the JDK's and for Automation Compilators
