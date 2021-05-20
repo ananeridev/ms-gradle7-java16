@@ -19,6 +19,7 @@ dependencies {
 	implementation group: 'mysql', name: 'mysql-connector-java', version: '8.0.25'
 	implementation group: 'javax.persistence', name: 'javax.persistence-api', version: '2.2'
 	compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.20'
+	implementation group: 'javax.validation', name: 'validation-api', version: '2.0.1.Final'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }

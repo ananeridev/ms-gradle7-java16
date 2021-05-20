@@ -2,6 +2,7 @@ package com.anabneri.gradlejava16test;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -21,6 +22,11 @@ public class ProductController {
     @GetMapping
     public List<Product> findAll() {
         return repository.findAll();
+    }
+
+    @PostMapping
+    public Product create(ProductRecordDTO productRecordDTO) {
+            return this.repository.save(productRecordDTO.toEntity());
     }
 
 }
