@@ -4,8 +4,8 @@ import javax.validation.constraints.*;
 
 
 public record ProductRecordDTO(
-                              @NotEmpty  String name,
-                                int status) {
+                             @NotNull @NotEmpty  String name,
+                                @Max(1) @Min(0) int status) {
 
     public Product toEntity() {
         return new Product(null, this.name, this.status);
